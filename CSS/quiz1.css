@@ -1,0 +1,632 @@
+*{
+    margin: 0;                  /*This margin and padding will be applicable for all the html elements*/
+    padding: 0;
+    font-family: 'Poppins', sans-serif;      
+}
+html {
+    scroll-behavior: smooth;
+}
+/* This css for Scrollbar*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 6px;
+}
+
+/*-------end---------*/
+
+body {
+    margin: 0;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Images/Student_3/Oc.jpg");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quizStart,
+.quizMain
+.quizResult{
+	position: absolute;
+    top: 50%;
+    left: 50%;	
+}   
+.quizStart{
+    padding: 10px;
+    text-align: center;
+	width: 540px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+	z-index: 5;
+}
+.quizStart .Title{
+	height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+.quizStart .instructions{
+	padding: 15px 30px;
+	
+}
+.quizStart .instructions li{
+	margin: 5px 0;
+    font-size: 17px;
+	font-weight:bold;
+	list-style: none;
+}
+.quizStart .buttons{
+	height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+.quizStart .buttons button{
+	margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+	color: #576CBC;
+    background: #fff9f9;
+}
+.quizStart .buttons button:hover{
+	color:white;
+	background: #0B2447;
+}
+.quizMain{
+	width: 550px;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("oscars.jpg");
+    border-radius: 5px;
+	transform: translate(65%, 10%) scale(1);
+    opacity: 1;
+    pointer-events:auto;
+    transition: all 0.3s ease;
+	z-index:5;
+}
+.quizMain .quizHeader{
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #576CBC;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	width: 550px;
+}
+.quizMain .quizHeader .mainTitle{
+	font-size: 20px;
+    font-weight: 600;
+}
+.quizMain .quizHeader .timer{
+	color: #004085;
+    background: #fff;
+    border: 1px solid #576CBC;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+    margin-bottom: 10px;
+}
+.quizMain .quizHeader .timer .timer-D{
+	font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.quizMain .quizHeader .timer #timer{
+	font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 75px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #A5D7E8;
+    border: 1px solid #fff;
+}
+#Container1{
+	padding: 25px 30px 20px 30px;
+    margin-bottom: 20px;
+    background: #576CBC;
+	overflow-y: scroll;
+	height: 410px;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+#Container1 form .question{
+	font-size: 30px;
+    font-weight: 600;
+}
+#Container1 form .option{
+	padding: 20px 0px;
+    display: block;
+}
+#Container1 form .option .answers{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Container1 form .option .answers:hover{
+    color: #fff;
+    background: #19376D;
+    border: 1px solid #b8daff;
+}
+#Container1 form .button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+	color: #000000;
+    background: aliceblue;
+}
+#Container1 form .button:hover{
+    color:white;
+	background: #0B2447;
+}
+.quizMain .Top{
+    color:#000000;
+    padding: 15px;
+    text-decoration: none;
+    text-align: right;
+}
+.quizMain .Top:hover{
+    color: #ffff;
+}
+.quizResult{
+	width: 550px;
+    background: #fff;
+    border-radius: 5px;
+	transform: translate(65%, 10%) scale(1);
+    opacity: 1;
+    pointer-events:auto;
+    transition: all 0.3s ease;
+	z-index:5;
+}
+.quizResult .resultTitle{
+    text-align: center;
+	font-size: 20px;
+    font-weight: 500;
+    padding:25px;
+}
+.quizResult .quizAnswers{
+    padding: 8px 15px;
+    font-size: 18px;
+}
+.quizResult .button{
+    
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    transition: all 0.3s ease;
+	color: #0B2447;
+    background: #fff;
+}
+.quizResult .button:hover{
+    color:white;
+	background: #19376D;
+}
+.quizScore {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.score-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#ur-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #17263c, #3a506b);
+    color: #f5d061;
+    margin-top: 600px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+footer .footer-row p{
+    color: #fff;
+}
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 20%;
+    padding: 10px;
+}
+.footer-col:nth-child(2), .footer-col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.footer-col .logo i{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #f9004d;
+    color: #f9004d;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-col p{
+    font-size: 0.8rem;
+}
+.footer-col .passage p{
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+    margin: 20px 0 0; /* added margin-top of 20px */
+    padding: 0;
+    text-align: justify;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+footer ul li a{  
+    text-decoration: none;
+    color: #fff;
+}
+footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+
+}
+.footer-col form .fa-solid{
+    font-size: 1rem;
+    margin-right: 10px;
+}
+footer form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+footer form button .fa-solid{
+    font-size: 1rem;
+    color: #ccc;
+}
+footer .social-icons a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+    text-decoration: none;
+}
+footer .social-icons a:hover{
+    transform: scale(1.1);
+    background: #f5d061;
+    transition: 0.4s;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+
+}
+.copyrights p{
+    color: #ccc;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -25px;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    overflow: hidden;
+}
+.footer-row h3 .underline span{
+    width: 25px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{        /*This css for animations in footer*/
+    0%{
+        left: -20px;
+    }
+    0%{
+        left: 100px;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .footer-col{
+        flex-basis: 100%;
+    }
+    .footer-col:nth-child(2), .footer-col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+nav{
+    background: #0a2249;   
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+
+}
+nav ul li{
+    float: left;
+    display: block;
+    background:#0a2249;
+    margin: 0 5px;
+
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+nav ul li a:hover{
+    background-color: rgb(124, 120, 120);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fff ,0 0 5px #fff;
+                
+
+}
+
+nav ul ul li a:hover{
+    background-color: rgb(124, 120, 120);
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff;
+}
+
+
+nav ul ul{
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+
+}
+nav ul li:hover >ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+nav ul ul li a{
+    line-height: 50px;
+    padding: 8px 40px;
+}
+nav .logo{
+    margin-top: 5px;
+    margin-bottom: -15px;
+    float: left;
+    color: #ccc;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+}
+nav .logo img{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #ede6e8;
+    color: #f4e7eb;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+span.fas.fa-home{
+    margin-left: 10px;
+    font-size: 15px;
+}
+span.fas.fa-plus{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+@media all and (max-width:768px) {
+    nav ul{
+        margin-left: 0px;
+        float: left;
+
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        top :70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+    nav ul ul a{
+        padding-left: 40px;
+    }
+    .show{
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: black;
+    }
+    .nav-icon{
+        display:block;
+        color: #fff;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+    .header .text-box h1{
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .header .text-box p{
+        font-size: 10px;
+    }
+ }
+ ::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 6px;
+}

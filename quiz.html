@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav&footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/quiz1.css">
+    
+    <title>Quiz Main</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-s"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="Main_page.html">Home
+                <span class="fas fa-home  "></span>
+            </a>
+          </li>
+          <li><a href="comment-form.html">Feedback
+            <span class="far fa-message"></span>
+          </a></li>
+          <li>
+            <a href="#">Features
+                <span class="fas fa-plus"></span>
+            </a>
+            
+            <ul>
+              <li><a href="gaming.html">Games</a></li>
+              <li><a href="gaming.html">Music</a></li>
+              <li><a href="Movies(extracontent).html">Movies</a></li>
+              <li><a href="Page_Editor.html">Fashion</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Shop
+            <span class="fas fa-bag-shopping"></span>
+          </a></li>
+          <li><a href="#">Quiz</a></li> 
+          <li><a href="#">Contact
+            <span class="fas fa-address-card"></span>
+          </a></li> 
+        </ul>   
+    </nav>
+    <div class="quizMain">
+        <div class="quizHeader">
+            <h2 class="mainTitle">Quick Quiz</h2>
+            <div class="timer">
+                <div class="timer-D">
+                    Time Left
+                </div>
+                <div id="timer">
+                </div>
+            </div>
+        </div>
+        <div id="Container1">
+            <form name="form" class="form">
+                <br><br><br>
+                <div class='question1' id="topQ">
+                    <p class="question">1. In the TV show "Friends," what is the name of the coffee shop where the main characters hang out?</p>
+      
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="10" id="441948">
+                            <label for="441948" id="correctA1">Central Perk</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="0" id="3061942">
+                            <label for="3061942">Monk's Cafe</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="0" id="471956">
+                            <label for="471956">Pat and Lorraine's Coffee Shop</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q1" value="0" id="2121971">
+                            <label for="2121971">Hawthorne Grill</label>
+                        </div>
+                    </ul>
+                </div>
+    
+                <div class='question2'>
+                    <p class="question">2. Who is the current creative director of the fashion brand Gucci?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="0" id="Cauvery">
+                            <label for="Cauvery">Virginie Viard</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="10" id="Mahaweli">
+                            <label id="correctA2" for="Mahaweli">Sabato De Sarno</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="0" id="Padma">
+                            <label for="Padma">Pharrell Williams</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q2" value="0" id=" Amban">
+                            <label for=" Amban">Maria Grazia Chiuri</label>
+                        </div>
+                    </ul>
+                </div>
+          
+                <div class='question3'>
+                    <p class="question">3. Which video game franchise features a character named Master Chief??</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="10" id="Rupee">
+                            <label id="correctA3" for="Rupee">Halo</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="0" id="Euro">
+                            <label  for="Euro">Crysis</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="0" id="Yen">
+                            <label for="Yen">assassin's creed</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q3" value="0" id="Dollar">
+                            <label for="Dollar">Skyrim</label>
+                        </div>
+                    </ul>
+                </div>
+         
+                <div class='question4'>
+                    <p class="question">4. What is the name of the hobbit played by Elijah Wood in "The Lord of the Rings" trilogy?</p>
+      
+                    <ul class="option">
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="0" id="Burma">
+                            <label for="Burma">Aragon</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="0" id="Formosa">
+                            <label for="Formosa">Gandalf</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="10" id="Ceylon">
+                            <label id="correctA4" for="Ceylon">Frodo Baggins</label>
+                        </div>
+                        <div class="answers">
+                            <input class="answer" type="radio" name="q4" value="0" id="Nyasaland">
+                            <label for="Nyasaland">Harry Potter</label>
+                        </div>
+                    </ul>
+                </div>
+         
+                <div class='question5'>
+                    <p class="question">5. What does the acronym "LBD" stand for in fashion?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="10" id="Anuradhapura">
+                            <label id="correctA5" for="Anuradhapura">little black dress</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="0" id="Kandy1">
+                            <label  for="Kandy1">Longitudinal Business Database</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="0" id="Galle">
+                            <label for="Galle">Lunch Business Decline</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q5" value="0" id="Colombo1">
+                            <label for="Colombo1">Business development managers</label>
+                        </div>
+                    </ul>
+                </div>
+             
+                <div class='question6'>
+                    <p class="question">6. Who is the lead singer of the band Coldplay?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="0" id="SinEng">
+                            <label for="SinEng">Jonny Buckland</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="0" id="SinHin">
+                            <label for="SinHin">Phil Harvey</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="0" id="TamHin">
+                            <label for="TamHin">Guy Berryman</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q6" value="10" id="SinTam">
+                            <label id="correctA6" for="SinTam">Chris Martin</label>
+                        </div>
+                    </ul>
+                </div>
+             
+                <div class='question7'>
+                    <p class="question">7. What is the name of the game that features a character named Lara Croft?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="10" id="2008">
+                            <label id="correctA7" for="2008">Tomb Raider</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="0" id="2000">
+                            <label for="2000">Clementine</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="0" id="2014">
+                            <label for="2014">Evie</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q7" value="0" id="1948">
+                            <label for="1948">Clare</label>
+                        </div>
+                    </ul>
+                </div>
+          
+                <div class='question8'>
+                    <p class="question">8. Which character in the TV show "Game of Thrones" is known as the "Mother of Dragons"?</p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="0" id="8">
+                            <label for="8">Alysanne Targaryen</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="10" id="9">
+                            <label id="correctA8" for="9">Daenerys Targaryen</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="0" id="19">
+                            <label for="19">Rhaella Targaryen</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q8" value="0" id="20">
+                            <label for="20">Rhaenyra Targaryen</label>
+                        </div>
+                    </ul>
+                </div>
+        
+                <div class='question9'>
+                    <p class="question">9. What is the name of the band that created the hit song "Stairway to Heaven"?
+                    </p>
+
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="0" id="19">
+                            <label for="19">Linkin Park</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="10" id="25">
+                            <label id="correctA9" for="25">Led Zeppelin</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="0" id="28">
+                            <label for="28">Metallica</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q9" value="0" id="12">
+                            <label for="12">Bring Me the Horizon</label>
+                        </div>
+                  </ul>
+                </div>
+        
+                <div class='question10'>
+                    <p class="question">10. What is the name of the first-person shooter game that features a battle royale mode called Warzone?</p>
+                    <ul class="option">
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="0" id="Jaffna">
+                            <label for="Jaffna">CS GO</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="0" id="APeak">
+                            <label for="APeak">Battlefield</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="0" id="Hatton">
+                            <label for="Hatton">PUBG</label>
+                        </div>
+                        <div class="answers">
+                            <input type="radio" class="answer" name="q10" value="10" id="Pidurutalagala">
+                            <label id="correctA10" for="Pidurutalagala">Call of Duty</label>
+                        </div>
+                    </ul>
+                </div>
+                <div class="submitter"><!--this.disable will make the form submit only once-->
+                    <input class="button" id="submitButton" onClick="submitQuiz();this.disabled = true;" type="button" value="Submit">
+                </div>
+                <br>
+                <a class="Top" href="#topQ">Back to top</a>
+            </form>
+        </div>
+    </div>
+    <div class="quizResult">
+        <div id="showAnswer" style="display: none;">
+            <div class="resultTitle">
+                <h3 id="resultText">You've completed the quiz!</h3>
+                
+            </div>
+            <p id="ur-results">Your results:</p>
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+            <div class="quizAnswers" id="correctAnswer5"></div>
+            <div class="quizAnswers" id="correctAnswer6"></div>
+            <div class="quizAnswers" id="correctAnswer7"></div>
+            <div class="quizAnswers" id="correctAnswer8"></div>
+            <div class="quizAnswers" id="correctAnswer9"></div>
+            <div class="quizAnswers" id="correctAnswer10"></div>
+            <div class="quizScore">
+                <h2 id="userScore"></h2>
+            </div>
+            <div class="6, ol k,">
+                <input type="button" value="Play Again" onclick="location.reload();" class="button" id="resetButton">
+            <input type="button" value="Show Answers" class="button" id="show">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                </div>
+                <div class="passage">
+                    <p>We are undergraduate students of Westminister University.This is a coursework under the Web Design & 
+                        Developments.And we are in group G</p>
+                </div> 
+            </div>
+            <div class="footer-col">
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>57 Ramakrishna Road,</p>
+                <p>Colombo 006000,</p>
+                <p>Sri Lanka</p>
+                <p class="email-id">sachinayeshmantha@gmail.com</p>
+                <h4>+94 - 0112360212</h4>
+            </div>
+            <div class="footer-col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#swip">Home</a></li>
+                    <li><a href="#events">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="Page_Editor.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter<div class="underline"><span></span></div></h3>
+                <form action="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyrights">
+            <p>&copy; 2023 Sachin Ayeshmantha - All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="javascript/quiz.js"></script>
+	<br>
+</body>
+</html>
